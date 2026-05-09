@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body, html,main {
+  min-height: 100%;
+}
+
+/* Dividindo a MAIN principal*/
+#principal {
+    display: grid;
+    grid-template-columns: 500px auto;
+    grid-template-rows: auto auto;
+    padding: 15px;
+    background-color: #F5F7FB;
+}
+
+#texto-entrada #nome-site {
+
+    grid-column:1 / 2; 
+    grid-row:   1 / 2;  
+    margin-bottom: auto;
+    font-family: Poppins, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #1F4D5C;
+}
+
+#texto-entrada #texto {
+    grid-column:1 / 2;  
+    grid-row:   1 / 2;  
+    margin-top: auto;
+    font-family: Poppins, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #6B7280;
+}
+
+#texto-entrada #imagem{
+    grid-column:1 / 2;  
+    grid-row:   2 / 3;  
+    width: 50%;
+    opacity: 0.5;
+}
+
+#login{
+    grid-column:2 / 3;  
+    grid-row:   1 / 3;  
+    font-family: Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    color: #6B7280;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+
+}
+#login #texto-entrar{
+    font-size: 20px;
+}
+
+#login #rotulo-email{
+    font-size: 10px;
+}
+
+#login #rotulo-senha{
+    font-size: 10px;
+}
+
+#login #esqueceu-senha{
+    font-size: 7.5px;
+    text-align: right;
+    margin-top: 0;
+    
+}
+
+#cadastrar{
+    grid-column:2 / 2;  
+    grid-row:   1 / 3;  
+    text-align: center;
+}
+
+#entrar {
+    margin-left: auto;
+    margin-right: auto;
+}
