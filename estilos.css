@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+body, html{
+  min-height: 100%;
+}
+
+
 /* Dividindo a DIV recipiente*/
 #recipiente{
   display: grid;
@@ -11,21 +16,25 @@
 #recipiente > #cabecalho-pagina{
   grid-column:  1 / 3; /*Vai da calha 1 até a calha 3*/
   grid-row:     1 / 2; /*Vai da calha 1 até a calha 2*/
+  background-color: #F5F7FB;  
 }
 
 #recipiente > #lateral{
   grid-column:  1 / 2; /*Vai da calha 1 até a calha 2*/
   grid-row:     2 / 3; /*Vai da calha 2 até a calha 3*/
+  background-color:  #F5F7FB;  
 }
 
 #recipiente > #principal{
   grid-column:  2 / 3; /*Vai da calha 2 até a calha 3*/
   grid-row:     2 / 3; /*Vai da calha 2 até a calha 3*/
+  background-color:  #F5F7FB;  
 }
 
 #recipiente > #rodape-pagina{
   grid-column:  1 / 3; /*Vai da calha 1 até a calha 3*/
   grid-row:     3 / 4; /*Vai da calha 3 até a calha 4*/
+  background-color: #F5F7FB;  
 }
 
 
@@ -36,7 +45,7 @@ header {
                                                  Direita  --> O restante */
   grid-template-rows: auto auto;     /*2 linas:   Acima    --> Tamanho fixo
                                                  Abaixo   --> O restante */ 
-  background-color: #F5F7FB;  
+
 }
 
 header #nome-site {                      
