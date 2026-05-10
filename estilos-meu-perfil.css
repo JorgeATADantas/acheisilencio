@@ -107,25 +107,25 @@ header #menu-principal{
   margin-bottom: 30px;
 }
 
-#botao-editar-perfil{
+#botao-editar-perfil {
   border: none;
-  border-radius: 20px;
-
-  padding: 12px 20px;
-
-  background-color: #ebebeb;
-  color: #6B7280;
-
+  border-radius: 20px; 
+  padding: 10px 24px; 
+  background-color: #1F4D5C; 
+  color: white; 
   font-family: Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px; 
   font-weight: 500;
-
   cursor: pointer;
-
+  transition: background-color 0.3s, transform 0.1s;
 }
 
 #botao-editar-perfil:hover{
-  opacity: 0.8;
+  background-color: #2D6F85;
+}
+
+#botao-editar-perfil:active {
+  transform: scale(0.96) translateY(1px); 
 }
 
 #estatisticas-usuario{
