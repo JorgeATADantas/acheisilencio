@@ -25,16 +25,79 @@
         </header>
 
         <section id="lateral">
-            <p>Seção lateral</p>
+            <div class="card-lateral">
+                <h2>Nova contribuição</h2>
+                <p>Cadastre um local com dados úteis para quem precisa de foco.</p>
+            </div>
         </section>
 
         <main id="principal">
-            <p>Seção principal</p>
+            <div id="card-formulario">
+                <h2>Cadastrar novo local</h2>
+        
+                <form id="formulario-local">
+                    <div class="linha-formulario">
+                            <label for="nome-local">Nome do local</label>
+                            <input type="text" id="nome-local" value="CCBB">
+
+                            <label for="categoria">Categoria</label>
+                            <select id="categoria">
+                                <option value="biblioteca">Biblioteca</option>
+                                <option value="cafe">Café</option>
+                                <option value="centro-cultural"> Centro Cultural</option>
+                                <option value="museu">Museu</option>
+                                <option value="parque">Parque</option>
+                                <option value="praca">Praça</option>
+                                <option value="restaurante"> Restaurante</option>
+                                <option value="sorveteria">Sorveteria</option>
+                                <option value="outro">Outro</option>
+                            </select>
+
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" value="Praça da Liberdade, 144 - Funcionários">
+
+                            <label for="faixa-preco">Faixa de Preço</label>
+                            <select id="faixa-preco">
+                                <option value="gratuito">Gratuito</option>
+                                <option value="0-5">R$ 0,01 a R$ 5,00</option>
+                                <option value="5-10">R$ 5,01 a R$ 10,00</option>
+                                <option value="10-20">R$ 10,01 a R$ 20,00</option>
+                                <option value="20-30">R$ 20,01 a R$ 30,00</option>                            
+                                <option value="30+"> Acima de R$ 30,01</option>
+                            </select>
+
+
+                            <label for="horario">Horário de utilização</label>
+                            <select id="horario">
+                                <option value="07-10">07:00h às 10:00h</option>
+                                <option value="10-13">10:01h às 13:00h</option>
+                                <option value="13-16">13:01h às 16:00h</option>
+                                <option value="16-19">16:01h às 19:00h</option>
+                                <option value="19-22">19:01h às 22:00h</option>
+                            </select>
+
+                            <label for="pontos-energia">Pontos de Energia</label>
+                                <select id="pontos-energia">
+                                <option value="sem">Sem Pontos de Energia</option>
+                                <option value="insuficientes">Pontos de Energia Insuficientes</option>
+                                <option value="adequadas">Pontos de Energia em Quantidades Adequadas</option>
+                                <option value="muitas">Muitos Pontos de Energia</option>
+                            </select>
+        
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao">  Ambiente silencioso com mesas coletivas e individuais, boa iluminação natural e
+                             tomada em parte do salão. Troca de horário do almoço deixa movimento moderado.
+                        </textarea>
+        
+                    </div>
+
+                    <div id="acoes-formulario">
+                        <button type="submit" id="publicar">Publicar local</button>
+                        <button type="reset" id="limpar">Limpar formulário</button>
+                    </div>
+                </form>
+            </div>
         </main>
-        <footer id="rodape-pagina">
-            <p>Rodapé</p>
-        </footer>
     </div>
-    
 </body>
 </html>
