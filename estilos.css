@@ -16,7 +16,9 @@ body, html,main{
 #recipiente > #cabecalho-pagina{
   grid-column:  1 / 3; /*Vai da calha 1 até a calha 3*/
   grid-row:     1 / 2; /*Vai da calha 1 até a calha 2*/
-  background-color: #F5F7FB;  
+  background-color: #F5F7FB; 
+  margin-top: 5px;
+
 }
 
 #recipiente > #lateral{
@@ -57,7 +59,7 @@ header #nome-site {
   font-weight: 600;
   font-size: 40px;
   color: #1F4D5C;
-  }
+}
   
   header #slogan-site {
     grid-column:  1 / 2;  /*Vai da calha 1 até a calha 2*/
@@ -136,7 +138,9 @@ header #menu-principal{
     color: #ebebeb; 
     padding: 40px 20px; 
     font-family: 'Poppins', sans-serif;
-    margin-top: 50px; 
+    margin-top: 5px; 
+    margin-bottom: 0px;
+    border-top: 3px solid #1F4D5C;
 }
 
 .rodape-conteudo {
