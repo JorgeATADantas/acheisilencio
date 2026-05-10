@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achei Silêncio - Explorar</title>
+    <title>Achei Silêncio - Meu Perfil</title>
 
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-meu-perfil.css">
+    <script src="usuarios.js" defer></script>
 </head>
 
 <body>
     <div id="recipiente">
         <header id="cabecalho-pagina">
             <h1 id="nome-site">Achei Silêncio</h1>
-            <h2 id="slogan-site"><strong>Encontre um cantinho de paz para você</strong></h2>
         
             <nav id="menu-principal">
                 <ul>
@@ -24,17 +24,24 @@
             </nav>
         </header>
 
-        <section id="lateral">
-            <p>Seção lateral</p>
-        </section>
-
         <main id="principal">
-            <p>Seção principal</p>
+            <section id="perfil-usuario">
+                <div id="cabecalho-perfil">
+                    <h2 id="nome-usuario">Bem-vindo, Usuário</h2>
+
+                    <button id="botao-editar-perfil">
+                        Editar Perfil
+                    </button>
+                </div>
+
+
+                <ul id="estatisticas-usuario">
+                    <li id="locais-visitados">Locais Visitados: 0</li>
+                    <li id="favoritos">Favoritos: 0</li>
+                    <li id="media-avaliacoes">Média avaliações: 0</li>
+                </ul>
+            </section>
         </main>
-        <footer id="rodape-pagina">
-            <p>Rodapé</p>
-        </footer>
     </div>
-    
 </body>
 </html>
