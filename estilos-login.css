@@ -8,10 +8,12 @@ body, html,main {
 /* Dividindo a MAIN principal*/
 #principal {
     display: grid;
-    grid-template-columns: 500px auto;
+    grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
     padding: 15px;
     background-color: #F5F7FB;
+    
+    
 }
 
 #texto-entrada #nome-site {
@@ -25,22 +27,29 @@ body, html,main {
     color: #1F4D5C;
 }
 
-#texto-entrada #texto {
-    grid-column:1 / 2;  
-    grid-row:   1 / 2;  
+#texto-entrada #slogan-site {
+    grid-column: 1 / 2;  
+    grid-row: 1 / 2;  
     margin-top: auto;
     font-family: Poppins, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 600;
     font-size: 20px;
-    color: #6B7280;
+    color: #112130;
 }
 
-#texto-entrada #imagem{
-    grid-column:1 / 2;  
-    grid-row:   2 / 3;  
-    width: 50%;
-    opacity: 0.5;
+
+#texto-entrada #imagem {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px; 
 }
+
 
 #login{
     grid-column:2 / 3;  
@@ -83,4 +92,71 @@ body, html,main {
 #entrar {
     margin-left: auto;
     margin-right: auto;
+}
+
+#login {
+    grid-column: 2 / 3;  
+    grid-row: 1 / 3;  
+    font-family: Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    color: #6B7280;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px; 
+    
+    max-width: 350px; 
+    margin: 50px auto; 
+}
+
+#login input {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    margin-bottom: 5px; 
+    box-sizing: border-box; 
+}
+
+#entrar {
+    width: 100%;
+    padding: 15px;
+    background-color: #112130; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer; 
+    margin-top: 15px; 
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#login #esqueceu-senha {
+    font-size: 10px;
+    text-align: right; 
+    margin-top: 0;
+}
+
+#login #texto-entrar {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F4D5C;
+    margin-bottom: 20px;
+}
+
+#cadastrar {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+#entrar:hover {
+    background-color: #1F4D5C; 
+}
+
+#entrar:active {
+    transform: scale(0.992); 
+    background-color: #0a141d; 
 }

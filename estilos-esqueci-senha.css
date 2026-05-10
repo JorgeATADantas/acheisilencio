@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F7FB; 
+}
+
+#principal {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;
+}
+
+#cartao-recuperar {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05); 
+    max-width: 400px;
+    width: 90%;
+    text-align: left;
+}
+
+#nome-site {
+    color: #1F4D5C;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #112130;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #6B7280;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 12px;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #112130; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#enviar:hover {
+    background-color: #1F4D5C; 
+}
+
+#voltar {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#voltar a {
+    text-decoration: none;
+    color: #1F4D5C;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#voltar a:hover {
+    text-decoration: underline;
+}
+
+#enviar:active {
+    transform: scale(0.992); 
+    background-color: #0a141d; 
+}
