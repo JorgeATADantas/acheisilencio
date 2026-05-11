@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achei Silêncio - Meu Perfil</title>
+    <title>Achei Silêncio - Index</title>
 
-    <link rel="stylesheet" href="estilos-meu-perfil.css">
     <link rel="stylesheet" href="estilos.css">
-    <script src="usuarios.js" defer></script>
+    <link rel="stylesheet" href="estilos-editar-perfil.css">
 </head>
 
 <body>
@@ -17,34 +16,44 @@
             <h2 id="slogan-site"><strong>Encontre um cantinho de paz para você</strong></h2>
         
             <nav id="menu-principal">
-                <ul>
+                <ul id="menu-usuario">
                     <li><a href="explorar.html">Explorar</a></li>
                     <li><a href="favoritos.html">Favoritos</a></li>
-                    <li><a href="novo-cantinho.html">Novo Cantinho</a></li>
+                     <li><a href="novo-cantinho.html">Novo Cantinho</a></li>
                     <li><a href="meu-perfil.html">Meu Perfil</a></li>
+                    
+                </ul>
+
+                <ul id="menu-visitante">
+                    <li><a href="explorar.html">Explorar</a></li>
+                    <li class="item-login"><a href="login.html">Entrar</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main id="principal">
-            <section id="perfil-usuario">
-                <div id="cabecalho-perfil">
-                    <h2 id="nome-usuario">Bem-vindo, Usuário</h2>
-                    
-                    <ul class="lista-botoes">
-                        <li><button type="button" onclick="window.location.href='editar-perfil.html'">Editar perfil</button></li>
-                        <li><button type="button" id="botao-sair">Sair</button></li>
-                    </ul>
+    <main id="principal">
+        <div id="card-editar-perfil">
+            <h2>Editar Perfil</h2>
+            <p>Atualize suas informações pessoais abaixo.</p>
 
+            <form id="formulario-editar-perfil">
+                <div class="dados-perfil">
+                    <label for="editar-nome">Nome de Usuário</label>
+                    <input type="text" id="editar-nome" required>
+                    <label for="editar-email">E-mail</label>
+                    <input type="email" id="editar-email" value="contato@acheisilencio.com.br">
+                    <label for="editar-senha">Nova Senha</label>
+                    <input type="password" id="editar-senha" placeholder="Deixe em branco para manter a atual">          
                 </div>
 
-                <ul id="estatisticas-usuario">
-                    <li id="locais-visitados">Locais Visitados: 0</li>
-                    <li id="favoritos">Favoritos: 0</li>
-                    <li id="media-avaliacoes">Média avaliações: 0</li>
-                </ul>
-            </section>
-        </main>
+                <div id="acoes-formulario-perfil">
+                    <button type="button" id="cancelar-edicao" onclick="window.location.href='meu-perfil.html'">Cancelar</button>
+                    <button type="submit" id="salvar-perfil">Salvar alterações</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
     <footer id="rodape-pagina">
         <div class="rodape-conteudo">
         
@@ -73,10 +82,9 @@
             </div>
 
             </div>
-        </footer>    
-    
+        </footer>
     </div>
-    <script src="index.js"></script> 
-    <script src="meu-perfil.js"></script> 
+    <script src="index.js"></script>
+    <script src="editar-perfil.js"></script>
 </body>
 </html>

@@ -17,8 +17,8 @@ body, html,main{
   grid-column:  1 / 3; /*Vai da calha 1 até a calha 3*/
   grid-row:     1 / 2; /*Vai da calha 1 até a calha 2*/
   background-color: #F5F7FB; 
-  margin-top: 5px;
-
+  margin-bottom: 5px;
+  border-bottom: 3px solid #1F4D5C;
 }
 
 #recipiente > #lateral{
