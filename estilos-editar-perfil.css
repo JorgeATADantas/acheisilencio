@@ -1,0 +1,90 @@
+#card-editar-perfil {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); 
+    
+    max-width: 500px; 
+    margin: 60px auto; 
+}
+
+#card-editar-perfil h2 {
+    color: #1F4D5C;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+#card-editar-perfil p {
+    color: #6B7280;
+    font-family: Inter, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.dados-perfil {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px; 
+}
+
+.dados-perfil label {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 8px;
+}
+
+.dados-perfil input {
+    padding: 12px 15px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    color: #1F4D5C;
+    background-color: white;
+    transition: border-color 0.3s;
+}
+
+.dados-perfil input:focus {
+    border-color: #1F4D5C;
+    outline: none; 
+}
+
+#acoes-formulario-perfil {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 15px;
+    margin-top: 40px;
+}
+
+#acoes-formulario-perfil button {
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#cancelar-edicao {
+    background-color: transparent;
+    color: #1F4D5C;
+    border: 1px solid #D1D5DB;
+}
+
+#cancelar-edicao:hover {
+    border-color: #1F4D5C;
+}
+
+#salvar-perfil {
+    background-color: #1F4D5C; 
+    color: white;
+    border: none;
+}
+
+#salvar-perfil:hover {
+    background-color: #2D6F85;
+}

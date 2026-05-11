@@ -3,8 +3,16 @@ document.addEventListener('DOMContentLoaded', function() {
     if (botaoSair) {
         botaoSair.addEventListener('click', function(evento) {
             evento.preventDefault();
-            localStorage.removeItem('statusLogin');
+            localStorage.removeItem('statusLogin'); 
             window.location.href = 'index.html';
         });
+    }
+
+    const nomeModificado = localStorage.getItem('nomeUsuarioModificado');
+    // Procura o local onde o nome aparece na tela (a tag H2)
+    const tituloBoasVindas = document.querySelector('#nome-usuario');
+    if (nomeModificado && tituloBoasVindas) {
+        // Escreve o nome modificado no lugar do antigo
+        tituloBoasVindas.innerHTML = `Bem-vindo, <span>${nomeModificado}</span>`;
     }
 });
