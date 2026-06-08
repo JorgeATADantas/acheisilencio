@@ -7,28 +7,35 @@
 
     <link rel="stylesheet" href="estilos-login.css">
 </head>
-
 <body>
     <main id="principal">
         <a href="index.html" id="botao-voltar">← Voltar para o início</a>
+        
         <section id="imagem-logo">
-            <img src="imagens\logo-achei-silêncio.png" id="imagem" alt="Logo do nosso site">
+            <img src="imagens/logo-achei-silêncio.png" id="imagem" alt="Logo do nosso site">
         </section>
 
         <section id="login">
             <p id="texto-entrar">Entrar</p>
-            <label id="rotulo-email" for="email">E-mail:</label>
-            <input type="email" id="email" name="email">
-            <label id="rotulo-senha" for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha">
-            <p id="esqueceu-senha"><a href="esqueci-senha.html">Esqueci a senha</a></p>
-            <button id="entrar">Entrar</button>
+            
+            <form id="form-login">
+                <label class="rotulo" for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                
+                <label class="rotulo" for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                
+                <p id="esqueceu-senha"><a href="esqueci-senha.html">Esqueci a senha</a></p>
+                
+                <button type="submit" id="entrar">Entrar</button>
+            </form>
         
             <section id="cadastrar">
                 <p>Ainda não tem conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
             </section>
         </section>
     </main>
+    
     <script src="login.js"></script> 
 </body>
 </html>

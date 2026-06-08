@@ -6,6 +6,7 @@
     <title>Achei Silêncio - Explorar</title>
 
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-explorar.css">
 </head>
 
 <body>
@@ -20,7 +21,6 @@
                     <li><a href="favoritos.html">Favoritos</a></li>
                     <li><a href="novo-cantinho.html">Novo Cantinho</a></li>
                     <li><a href="meu-perfil.html">Meu Perfil</a></li>
-                    
                 </ul>
 
                 <ul id="menu-visitante">
@@ -30,43 +30,127 @@
             </nav>
         </header>
 
-        <section id="lateral">
-            <p>Seção lateral</p>
-        </section>
+        <main id="principal" class="explorar-cheia">
+            <div class="conteudo-centralizado">
+                
+                <section id="barra-pesquisa">
+                    
+                    <div class="area-input-tags">
+                        <div id="tags-selecionadas"></div>
+                        <input type="text" id="campo-busca" placeholder="Buscar por bairro, rua, universidade...">
+                    </div>
+                    
+                    <div class="container-filtro">
+                        <button id="btn-filtrar">Filtrar ▼</button>
+                        
+                        <div id="menu-filtros" class="oculto">
+                            
+                            <strong class="titulo-categoria">Avaliação</strong>
+                            <label><input type="checkbox" class="check-filtro" value="5 Estrelas" data-cor="tag-amarela"> 5 Estrelas</label>
+                            <label><input type="checkbox" class="check-filtro" value="4 Estrelas" data-cor="tag-amarela"> 4 Estrelas</label>
+                            <label><input type="checkbox" class="check-filtro" value="3 Estrelas" data-cor="tag-amarela"> 3 Estrelas</label>
+                            <label><input type="checkbox" class="check-filtro" value="2 Estrelas" data-cor="tag-amarela"> 2 Estrelas</label>
+                            <label><input type="checkbox" class="check-filtro" value="1 Estrela" data-cor="tag-amarela"> 1 Estrela</label>
 
-        <main id="principal">
-            <p>Seção principal</p>
+                            <strong class="titulo-categoria">Comodidades</strong>
+                            <label><input type="checkbox" class="check-filtro" value="Wi-Fi" data-cor="tag-azul"> Wi-Fi</label>
+                            <label><input type="checkbox" class="check-filtro" value="Ar Condicionado" data-cor="tag-azul"> Ar Condicionado</label>
+                            <label><input type="checkbox" class="check-filtro" value="Isolamento Acústico" data-cor="tag-roxa"> Isolamento Acústico</label>
+                            <label><input type="checkbox" class="check-filtro" value="Refeições no Local" data-cor="tag-verde"> Refeições no Local</label>
+                            <label><input type="checkbox" class="check-filtro" value="Pet Friendly" data-cor="tag-roxa"> Pet Friendly</label>
+
+                            <strong class="titulo-categoria">Ambiente</strong>
+                            <label><input type="checkbox" class="check-filtro" value="Ambiente Fechado" data-cor="tag-rosa"> Ambiente Fechado</label>
+                            <label><input type="checkbox" class="check-filtro" value="Ambiente Aberto" data-cor="tag-rosa"> Ambiente Aberto</label>
+
+                            <strong class="titulo-categoria">Valores e Serviços</strong>
+                            <label><input type="checkbox" class="check-filtro" value="Até R$ 35" data-cor="tag-verde"> Até R$ 35</label>
+                            <label><input type="checkbox" class="check-filtro" value="Superior a R$ 35" data-cor="tag-laranja"> Superior a R$ 35</label>
+                            <label><input type="checkbox" class="check-filtro" value="Entrega Gratuita" data-cor="tag-verde"> Entrega Gratuita</label>
+
+                            <hr class="linha-divisoria">
+                            <button type="button" id="btn-limpar-filtros">Limpar Filtros</button>
+
+                        </div>
+                    </div>
+                </section>
+
+                <h2 id="titulo-explorar">Ambientes silenciosos esperando por você</h2>
+
+                <section id="mostruario">
+                    <a href="#" class="cartao-local">
+                        <div class="info-texto">
+                            <h3>Biblioteca UFMG</h3>
+                            <p>Av. Antônio Carlos - campus</p>
+                        </div>
+                        <div class="controles-local">
+                            <span class="btn-favorito">♡</span>
+                            <div class="info-nota">
+                                <span class="icone-estrela">⭐</span>
+                                <strong>4.9</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="cartao-local">
+                        <div class="info-texto">
+                            <h3>Café Belo Horizonte</h3>
+                            <p>Rua da Paz, 144</p>
+                        </div>
+                        <div class="controles-local">
+                            <span class="btn-favorito">♡</span>
+                            <div class="info-nota">
+                                <span class="icone-estrela">⭐</span>
+                                <strong>4.7</strong>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="cartao-local">
+                        <div class="info-texto">
+                            <h3>Café com Letras</h3>
+                            <p>Centro - acesso livre</p>
+                        </div>
+                        <div class="controles-local">
+                            <span class="btn-favorito">♡</span>
+                            <div class="info-nota">
+                                <span class="icone-estrela">⭐</span>
+                                <strong>4.6</strong>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+            </div>
         </main>
-    <footer id="rodape-pagina">
-        <div class="rodape-conteudo">
-        
-            <div class="rodape-secao">
-                <h3>Achei Silêncio</h3>
-                <p>Um site para quem busca lugares com paz e tranquilidade.</p>
-                <br>
-                <p><strong>Desenvolvido por:</strong></p>
-                <p>Jorge, André e Giovanni.</p>
-            </div>
 
-            <div class="rodape-secao">
-                <h3>Contato</h3>
-                <p><strong>E-mail:</strong> contato@acheisilencio.com.br</p>
-                <p><strong>Telefone:</strong> (31) 99999-0000</p>
-                <p><strong>Endereço:</strong> Avenida do Silêncio, 123 - Belo Horizonte, MG</p>
-            </div>
-
-            <div class="rodape-secao">
-                <h3>Redes Sociais</h3>
-                <ul class="redes-sociais">
-                    <li><a href="#">Instagram: @acheisilencio</a></li>
-                    <li><a href="#">Twitter/X: @acheisilencio_</a></li>
-                    <li><a href="#">LinkedIn: Achei Silêncio</a></li>
-                </ul>
-            </div>
-
+        <footer id="rodape-pagina">
+            <div class="rodape-conteudo">
+                <div class="rodape-secao">
+                    <h3>Achei Silêncio</h3>
+                    <p>Um site para quem busca lugares com paz e tranquilidade.</p>
+                    <br>
+                    <p><strong>Desenvolvido por:</strong></p>
+                    <p>Jorge, André e Giovanni.</p>
+                </div>
+                <div class="rodape-secao">
+                    <h3>Contato</h3>
+                    <p><strong>E-mail:</strong> contato@acheisilencio.com.br</p>
+                    <p><strong>Telefone:</strong> (31) 99999-0000</p>
+                    <p><strong>Endereço:</strong> Avenida do Silêncio, 123 - Belo Horizonte, MG</p>
+                </div>
+                <div class="rodape-secao">
+                    <h3>Redes Sociais</h3>
+                    <ul class="redes-sociais">
+                        <li><a href="#">Instagram: @acheisilencio</a></li>
+                        <li><a href="#">Twitter/X: @acheisilencio_</a></li>
+                        <li><a href="#">LinkedIn: Achei Silêncio</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>
+    
     <script src="index.js"></script>
+    <script src="explorar.js"></script>
 </body>
 </html>
