@@ -1,11 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const botaoEntrar = document.getElementById('entrar');
+const formLogin = document.getElementById('form-login');
 
-    if (botaoEntrar) {
-        botaoEntrar.addEventListener('click', function(evento) {
-            evento.preventDefault();
-            localStorage.setItem('statusLogin', 'ativo');
-            window.location.href = 'index.html';
-        });
-    }
-});
+if (formLogin) {
+    formLogin.addEventListener('submit', function(evento) {
+        evento.preventDefault(); 
+
+        // Usa a mesma chave "statusLogin" que você criou no seu meu-perfil.js!
+        localStorage.setItem('statusLogin', 'true');
+        
+        // Redireciona para a index
+        window.location.href = 'index.html';
+    });
+}

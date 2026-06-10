@@ -13,6 +13,7 @@ body, html, main {
     background-color: #F5F7FB;
 }
 
+
 #imagem-logo #imagem {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -26,7 +27,8 @@ body, html, main {
     margin-bottom: 50px;     
 }
 
-#login {
+
+#cadastro {
     grid-column: 2 / 3;  
     grid-row: 1 / 3;  
     font-family: Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
@@ -41,7 +43,8 @@ body, html, main {
     margin: 50px auto; 
 }
 
-#login #texto-entrar {
+
+#cadastro #texto-cadastrar {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -49,13 +52,14 @@ body, html, main {
     color: #6B7280; 
 }
 
+
 .rotulo {
     font-size: 10px;
     margin-bottom: 2px;
-    display: inline-block;
 }
 
-#login input {
+
+#cadastro input {
     width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
@@ -65,23 +69,8 @@ body, html, main {
     font-family: inherit;
 }
 
-#esqueceu-senha {
-    font-size: 10px;
-    text-align: right;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
 
-#esqueceu-senha a {
-    text-decoration: none;
-    color: #1F4D5C;
-}
-
-#esqueceu-senha a:hover {
-    text-decoration: underline;
-}
-
-#entrar {
+#btn-cadastrar {
     width: 100%;
     padding: 15px;
     background-color: #1F4D5C; 
@@ -91,34 +80,36 @@ body, html, main {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer; 
-    margin-top: 5px; 
+    margin-top: 15px; 
     transition: background-color 0.3s, transform 0.1s;
 }
 
-#entrar:hover {
+#btn-cadastrar:hover {
     background-color: #2D6F85; 
 }
 
-#entrar:active {
+#btn-cadastrar:active {
     transform: scale(0.992); 
     background-color: #0a141d; 
 }
 
-#cadastrar {
+
+#voltar-login {
     text-align: center;
     margin-top: 30px;
     font-size: 12px;
 }
 
-#cadastrar a {
+#voltar-login a {
     text-decoration: none;
     color: #1F4D5C;
     font-weight: 500;
 }
 
-#cadastrar a:hover {
+#voltar-login a:hover {
     text-decoration: underline;
 }
+
 
 #botao-voltar {
     position: absolute; 
