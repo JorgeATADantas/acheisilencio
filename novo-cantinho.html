@@ -6,6 +6,7 @@
     <title>Achei Silêncio - Novo Cantinho</title>
 
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-novo-cantinho.css">
 </head>
 
 <body>
@@ -15,116 +16,107 @@
             <h2 id="slogan-site"><strong>Encontre um cantinho de paz para você</strong></h2>
         
             <nav id="menu-principal">
-                <ul>
+                <ul id="menu-usuario">
                     <li><a href="explorar.html">Explorar</a></li>
                     <li><a href="favoritos.html">Favoritos</a></li>
                     <li><a href="novo-cantinho.html">Novo Cantinho</a></li>
                     <li><a href="meu-perfil.html">Meu Perfil</a></li>
                 </ul>
+
+                <ul id="menu-visitante">
+                    <li><a href="explorar.html">Explorar</a></li>
+                    <li class="item-login"><a href="login.html">Entrar</a></li>
+                </ul>
             </nav>
         </header>
 
-        <section id="lateral">
-            <div class="card-lateral">
-                <h2>Nova contribuição</h2>
-                <p>Cadastre um local com dados úteis para quem precisa de foco.</p>
-            </div>
-        </section>
-
-        <main id="principal">
+        <main id="principal" class="tela-cheia">
             <div id="card-formulario">
                 <h2>Cadastrar novo local</h2>
+                <p class="subtitulo-form">Cadastre um local com dados úteis para quem precisa de foco.</p>
         
                 <form id="formulario-local">
                     <div class="linha-formulario">
-                            <label for="nome-local">Nome do local</label>
-                            <input type="text" id="nome-local" value="CCBB">
+                        <label for="nome-local">Nome do local</label>
+                        <input type="text" id="nome-local" placeholder="Ex: CCBB" required>
 
-                            <label for="categoria">Categoria</label>
-                            <select id="categoria">
-                                <option value="biblioteca">Biblioteca</option>
-                                <option value="cafe">Café</option>
-                                <option value="centro-cultural"> Centro Cultural</option>
-                                <option value="museu">Museu</option>
-                                <option value="parque">Parque</option>
-                                <option value="praca">Praça</option>
-                                <option value="restaurante"> Restaurante</option>
-                                <option value="sorveteria">Sorveteria</option>
-                                <option value="outro">Outro</option>
-                            </select>
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria">
+                            <option value="biblioteca">Biblioteca</option>
+                            <option value="cafe">Café</option>
+                            <option value="centro-cultural">Centro Cultural</option>
+                            <option value="museu">Museu</option>
+                            <option value="parque">Parque</option>
+                            <option value="praca">Praça</option>
+                            <option value="restaurante">Restaurante</option>
+                            <option value="sorveteria">Sorveteria</option>
+                            <option value="outro">Outro</option>
+                        </select>
 
-                            <label for="endereco">Endereço</label>
-                            <input type="text" id="endereco" value="Praça da Liberdade, 144 - Funcionários">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" placeholder="Ex: Praça da Liberdade, 144 - Funcionários" required>
 
-                            <label for="faixa-preco">Faixa de Preço</label>
-                            <select id="faixa-preco">
-                                <option value="gratuito">Gratuito</option>
-                                <option value="0-5">R$ 0,01 a R$ 5,00</option>
-                                <option value="5-10">R$ 5,01 a R$ 10,00</option>
-                                <option value="10-20">R$ 10,01 a R$ 20,00</option>
-                                <option value="20-30">R$ 20,01 a R$ 30,00</option>                            
-                                <option value="30+"> Acima de R$ 30,01</option>
-                            </select>
+                        <label for="faixa-preco">Faixa de Preço</label>
+                        <select id="faixa-preco">
+                            <option value="gratuito">Gratuito</option>
+                            <option value="0-5">R$ 0,01 a R$ 5,00</option>
+                            <option value="5-10">R$ 5,01 a R$ 10,00</option>
+                            <option value="10-20">R$ 10,01 a R$ 20,00</option>
+                            <option value="20-30">R$ 20,01 a R$ 30,00</option>                            
+                            <option value="30+">Acima de R$ 30,01</option>
+                        </select>
 
+                        <label>Horário de funcionamento</label>
+                        <div class="grupo-horario">
+                            <input type="time" id="horario-abertura" required>
+                            <span>até</span>
+                            <input type="time" id="horario-fechamento" required>
+                        </div>
 
-                            <label for="horario">Horário de utilização</label>
-                            <select id="horario">
-                                <option value="07-10">07:00h às 10:00h</option>
-                                <option value="10-13">10:01h às 13:00h</option>
-                                <option value="13-16">13:01h às 16:00h</option>
-                                <option value="16-19">16:01h às 19:00h</option>
-                                <option value="19-22">19:01h às 22:00h</option>
-                            </select>
+                        <label for="pontos-energia">Quantidades de Pontos de Energia</label>
+                        <select id="pontos-energia">
+                            <option value="sem">Sem Pontos de Energia</option>
+                            <option value="insuficientes">Pontos de Energia Insuficientes</option>
+                            <option value="adequadas">Pontos de Energia em Quantidades Adequadas</option>
+                            <option value="muitas">Muitos Pontos de Energia</option>
+                        </select>
 
-                            <label for="pontos-energia">Quantidades de Pontos de Energia</label>
-                                <select id="pontos-energia">
-                                <option value="sem">Sem Pontos de Energia</option>
-                                <option value="insuficientes">Pontos de Energia Insuficientes</option>
-                                <option value="adequadas">Pontos de Energia em Quantidades Adequadas</option>
-                                <option value="muitas">Muitos Pontos de Energia</option>
-                            </select>
+                        <label for="internet">Qualidade Internet / Wi-fi</label>
+                        <select id="internet">
+                            <option value="sem-internet">Sem Internet / Wi-fi</option>
+                            <option value="ruim-internet">Ruim</option>
+                            <option value="regular-internet">Regular</option>
+                            <option value="boa-internet">Boa</option>
+                            <option value="otima-internet">Ótima</option>
+                        </select>
 
-                            <label for="internet">Qualidade Internet / W-fi</label>
-                                <select id="internet">
-                                <option value="sem-internet">Sem Internet / Wi-fi</option>
-                                <option value="ruim-internet">Ruim</option>
-                                <option value="regular-internet">Regular</option>
-                                <option value="boa-internet">Boa</option>
-                                <option value="otima-internet">Ótima</option>
-                            </select>
+                        <label for="banheiro">Banheiros</label>
+                        <select id="banheiro">
+                            <option value="sem-banheiro">Sem Banheiro</option>
+                            <option value="quimico-banheiro">Somente Banheiro Químico</option>
+                            <option value="pouco-sujo-banheiro">Poucos Banheiros e Sujos</option>
+                            <option value="pouco-limpo-banheiro">Poucos Banheiros e Limpos</option>
+                            <option value="boa-sujo-banheiro">Boa quantidade de Banheiros e Sujos</option>
+                            <option value="boa-limpo-banheiro">Boa quantidade de Banheiros e Limpos</option>
+                        </select>
 
-                            <label for="banheiro">Banheiros</label>
-                                <select id="banheiro">
-                                <option value="sem-banheiro">Sem Banheiro</option>
-                                <option value="quimico-banheiro">Somente Banheiro Químico</option>
-                                <option value="pouco-sujo-banheiro">Poucos Banheiros e Sujos</option>
-                                <option value="pouco-limpo-banheiro">Poucos Banheiros e Limpos</option>
-                                <option value="boa-sujo-banheiro">Boa quantidade de Banheiros e Sujos</option>
-                                <option value="boa-limpo-banheiro">Boa quantidade de Banheiros e Limpos</option>
-                            </select>
+                        <label for="acessibilidade">Acessibilidade</label>
+                        <select id="acessibilidade">
+                            <option value="nao-acessibilidade">Não</option>
+                            <option value="sim-acessibilidade">Sim</option>
+                        </select>
 
-                            <label for="acessibilidade">Acessibilidade</label>
-                                <select id="acessibilidade">
-                                <option value="nao-acessibilidade">Não</option>
-                                <option value="sim-acessibilidade">Sim</option>
-                            </select>
+                        <label for="refeicao">Refeição</label>
+                        <select id="refeicao">
+                            <option value="sem-refeicao">Sem lugares para refeição</option>
+                            <option value="com-ruim-preco-justo">Com lugares para refeição, com preço justo e comida ruim</option>
+                            <option value="com-ruim-preco-caro">Com lugares para refeição, com preço elevado e comida ruim</option>
+                            <option value="com-boa-preco-justo">Com lugares para refeição, com preço justo e comida boa</option>
+                            <option value="com-boa-preco-caro">Com lugares para refeição, com preço elevado e comida boa</option>
+                        </select>
 
-                            <label for="refeicao">Refeição</label>
-                                <select id="refeicao">
-                                <option value="sem-refeicao">Sem lugares para refeição</option>
-                                <option value="com-ruim-preco-justo">Com lugares para refeição, com preço justo e comida ruim</option>
-                                <option value="com-ruim-preco-caro">Com lugares para refeição, com preço elevado e comida ruim</option>
-                                <option value="com-boa-preco-justo">Com lugares para refeição, com preço justo e comida boa</option>
-                                <option value="com-boa-preco-caro">Com lugares para refeição, com preço elevado e comida boa</option>
-                            </select>
-
-
-        
                         <label for="descricao">Descrição</label>
-                        <textarea id="descricao">  Ambiente silencioso com mesas coletivas e individuais, boa iluminação natural e
-                             tomada em parte do salão. Troca de horário do almoço deixa movimento moderado.
-                        </textarea>
-        
+                        <textarea id="descricao" placeholder="Descreva como é o ambiente..."></textarea>
                     </div>
 
                     <div id="acoes-formulario">
@@ -135,36 +127,34 @@
             </div>
         </main>
     
-    <footer id="rodape-pagina">
-        <div class="rodape-conteudo">
-        
-            <div class="rodape-secao">
-                <h3>Achei Silêncio</h3>
-                <p>Um site para quem busca lugares com paz e tranquilidade.</p>
-                <br>
-                <p><strong>Desenvolvido por:</strong></p>
-                <p>Jorge, André e Giovanni.</p>
-            </div>
-
-            <div class="rodape-secao">
-                <h3>Contato</h3>
-                <p><strong>E-mail:</strong> contato@acheisilencio.com.br</p>
-                <p><strong>Telefone:</strong> (31) 99999-0000</p>
-                <p><strong>Endereço:</strong> Avenida do Silêncio, 123 - Belo Horizonte, MG</p>
-            </div>
-
-            <div class="rodape-secao">
-                <h3>Redes Sociais</h3>
-                <ul class="redes-sociais">
-                    <li><a href="#">Instagram: @acheisilencio</a></li>
-                    <li><a href="#">Twitter/X: @acheisilencio_</a></li>
-                    <li><a href="#">LinkedIn: Achei Silêncio</a></li>
-                </ul>
-            </div>
-
+        <footer id="rodape-pagina">
+            <div class="rodape-conteudo">
+                <div class="rodape-secao">
+                    <h3>Achei Silêncio</h3>
+                    <p>Um site para quem busca lugares com paz e tranquilidade.</p>
+                    <br>
+                    <p><strong>Desenvolvido por:</strong></p>
+                    <p>Jorge, André e Giovanni.</p>
+                </div>
+                <div class="rodape-secao">
+                    <h3>Contato</h3>
+                    <p><strong>E-mail:</strong> contato@acheisilencio.com.br</p>
+                    <p><strong>Telefone:</strong> (31) 99999-0000</p>
+                    <p><strong>Endereço:</strong> Avenida do Silêncio, 123 - Belo Horizonte, MG</p>
+                </div>
+                <div class="rodape-secao">
+                    <h3>Redes Sociais</h3>
+                    <ul class="redes-sociais">
+                        <li><a href="#">Instagram: @acheisilencio</a></li>
+                        <li><a href="#">Twitter/X: @acheisilencio_</a></li>
+                        <li><a href="#">LinkedIn: Achei Silêncio</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
-    
     </div>
+
+    <script src="index.js"></script>
+    <script src="novo-cantinho.js"></script>
 </body>
 </html>

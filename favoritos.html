@@ -6,6 +6,7 @@
     <title>Achei Silêncio - Favoritos</title>
 
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-explorar.css">
 </head>
 
 <body>
@@ -15,52 +16,59 @@
             <h2 id="slogan-site"><strong>Encontre um cantinho de paz para você</strong></h2>
         
             <nav id="menu-principal">
-                <ul>
+                <ul id="menu-usuario">
                     <li><a href="explorar.html">Explorar</a></li>
                     <li><a href="favoritos.html">Favoritos</a></li>
                     <li><a href="novo-cantinho.html">Novo Cantinho</a></li>
                     <li><a href="meu-perfil.html">Meu Perfil</a></li>
                 </ul>
+
+                <ul id="menu-visitante">
+                    <li><a href="explorar.html">Explorar</a></li>
+                    <li class="item-login"><a href="login.html">Entrar</a></li>
+                </ul>
             </nav>
         </header>
 
-        <section id="lateral">
-            <p>Seção lateral</p>
-        </section>
+        <main id="principal" class="explorar-cheia">
+            <div class="conteudo-centralizado">
+                
+                <h2 id="titulo-explorar">Seus Favoritos</h2>
 
-        <main id="principal">
-            <p>Seção principal</p>
+                <section id="mostruario">
+                </section>
+
+            </div>
         </main>
-    <footer id="rodape-pagina">
-        <div class="rodape-conteudo">
-        
-            <div class="rodape-secao">
-                <h3>Achei Silêncio</h3>
-                <p>Um site para quem busca lugares com paz e tranquilidade.</p>
-                <br>
-                <p><strong>Desenvolvido por:</strong></p>
-                <p>Jorge, André e Giovanni.</p>
-            </div>
 
-            <div class="rodape-secao">
-                <h3>Contato</h3>
-                <p><strong>E-mail:</strong> contato@acheisilencio.com.br</p>
-                <p><strong>Telefone:</strong> (31) 99999-0000</p>
-                <p><strong>Endereço:</strong> Avenida do Silêncio, 123 - Belo Horizonte, MG</p>
-            </div>
-
-            <div class="rodape-secao">
-                <h3>Redes Sociais</h3>
-                <ul class="redes-sociais">
-                    <li><a href="#">Instagram: @acheisilencio</a></li>
-                    <li><a href="#">Twitter/X: @acheisilencio_</a></li>
-                    <li><a href="#">LinkedIn: Achei Silêncio</a></li>
-                </ul>
-            </div>
-
+        <footer id="rodape-pagina">
+            <div class="rodape-conteudo">
+                <div class="rodape-secao">
+                    <h3>Achei Silêncio</h3>
+                    <p>Um site para quem busca lugares com paz e tranquilidade.</p>
+                    <br>
+                    <p><strong>Desenvolvido por:</strong></p>
+                    <p>Jorge, André e Giovanni.</p>
+                </div>
+                <div class="rodape-secao">
+                    <h3>Contato</h3>
+                    <p><strong>E-mail:</strong> contato@acheisilencio.com.br</p>
+                    <p><strong>Telefone:</strong> (31) 99999-0000</p>
+                    <p><strong>Endereço:</strong> Avenida do Silêncio, 123 - Belo Horizonte, MG</p>
+                </div>
+                <div class="rodape-secao">
+                    <h3>Redes Sociais</h3>
+                    <ul class="redes-sociais">
+                        <li><a href="#">Instagram: @acheisilencio</a></li>
+                        <li><a href="#">Twitter/X: @acheisilencio_</a></li>
+                        <li><a href="#">LinkedIn: Achei Silêncio</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>
     
+    <script src="index.js"></script>
+    <script src="favoritos.js"></script>
 </body>
 </html>

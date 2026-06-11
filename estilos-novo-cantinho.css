@@ -1,0 +1,123 @@
+#recipiente > #principal.tela-cheia {
+    grid-column: 1 / 3; 
+    padding: 40px 5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#card-formulario {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#card-formulario h2 {
+    color: #1F4D5C;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.subtitulo-form {
+    color: #6B7280;
+    font-size: 14px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #F3F4F6;
+    padding-bottom: 15px;
+}
+
+.linha-formulario label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #112130;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.linha-formulario input,
+.linha-formulario select,
+.linha-formulario textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+    font-family: inherit;
+    font-size: 14px;
+    color: #374151;
+    background-color: #F9FAFB;
+    transition: border-color 0.3s, background-color 0.3s;
+    box-sizing: border-box; 
+}
+
+.linha-formulario input:focus,
+.linha-formulario select:focus,
+.linha-formulario textarea:focus {
+    outline: none;
+    border-color: #1F4D5C;
+    background-color: white;
+}
+
+.grupo-horario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.grupo-horario input[type="time"] {
+    flex: 1;
+}
+
+.grupo-horario span {
+    font-size: 14px;
+    color: #6B7280;
+    font-weight: 600;
+}
+
+.linha-formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#acoes-formulario {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+#publicar {
+    background-color: #112130;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: inherit;
+}
+
+#publicar:hover {
+    background-color: #1F4D5C;
+}
+
+#limpar {
+    background-color: white;
+    color: #6B7280;
+    border: 1px solid #D1D5DB;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: inherit;
+}
+
+#limpar:hover {
+    background-color: #F3F4F6;
+    color: #112130;
+}
