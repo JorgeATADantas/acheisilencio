@@ -121,3 +121,21 @@
     background-color: #F3F4F6;
     color: #112130;
 }
+
+#avaliacao-final {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #f1c40f;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fffdf0;
+}
+
+#estrela-nota {
+    font-size: 2rem;
+}
+
+#nota-final {
+    font-size: 1.8rem;
+    color: #f39c12;
+}

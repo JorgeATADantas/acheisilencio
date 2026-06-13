@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         botaoSair.addEventListener('click', function(evento) {
             evento.preventDefault();
             localStorage.removeItem('statusLogin'); 
-            window.location.href = 'index.html';
+            window.location.href = 'login.html';
         });
     }
 

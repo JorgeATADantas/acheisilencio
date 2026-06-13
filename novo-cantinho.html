@@ -39,7 +39,7 @@
                     <div class="linha-formulario">
                         <label for="nome-local">Nome do local</label>
                         <input type="text" id="nome-local" placeholder="Ex: CCBB" required>
-
+        
                         <label for="categoria">Categoria</label>
                         <select id="categoria">
                             <option value="biblioteca">Biblioteca</option>
@@ -52,71 +52,87 @@
                             <option value="sorveteria">Sorveteria</option>
                             <option value="outro">Outro</option>
                         </select>
-
+        
                         <label for="endereco">Endereço</label>
                         <input type="text" id="endereco" placeholder="Ex: Praça da Liberdade, 144 - Funcionários" required>
-
-                        <label for="faixa-preco">Faixa de Preço</label>
-                        <select id="faixa-preco">
-                            <option value="gratuito">Gratuito</option>
-                            <option value="0-5">R$ 0,01 a R$ 5,00</option>
-                            <option value="5-10">R$ 5,01 a R$ 10,00</option>
-                            <option value="10-20">R$ 10,01 a R$ 20,00</option>
-                            <option value="20-30">R$ 20,01 a R$ 30,00</option>                            
-                            <option value="30+">Acima de R$ 30,01</option>
-                        </select>
-
+        
                         <label>Horário de funcionamento</label>
                         <div class="grupo-horario">
                             <input type="time" id="horario-abertura" required>
                             <span>até</span>
                             <input type="time" id="horario-fechamento" required>
                         </div>
+        
+                        <label for="faixa-preco">Faixa de Preço</label>
+                        <select id="faixa-preco" required>
+                            <option value="" selected disabled hidden> Selecione uma opção</option>
+                            <option value="gratuito"    data-nota="5">Gratuito</option>
+                            <option value="0-5"         data-nota="4">R$ 0,01 a R$ 5,00</option>
+                            <option value="5-10"        data-nota="3">R$ 5,01 a R$ 10,00</option>
+                            <option value="10-20"       data-nota="2">R$ 10,01 a R$ 20,00</option>
+                            <option value="20-30"       data-nota="1">R$ 20,01 a R$ 30,00</option>
+                            <option value="30+"         data-nota="0">Acima de R$ 30,01</option>
+                        </select>
 
                         <label for="pontos-energia">Quantidades de Pontos de Energia</label>
-                        <select id="pontos-energia">
-                            <option value="sem">Sem Pontos de Energia</option>
-                            <option value="insuficientes">Pontos de Energia Insuficientes</option>
-                            <option value="adequadas">Pontos de Energia em Quantidades Adequadas</option>
-                            <option value="muitas">Muitos Pontos de Energia</option>
+                        <select id="pontos-energia" required>
+                            <option value="" selected disabled hidden> Selecione uma opção</option>
+                            <option value="sem"             data-nota="0">Sem Pontos de Energia</option>
+                            <option value="insuficientes"   data-nota="2">Pontos de Energia Insuficientes</option>
+                            <option value="adequadas"       data-nota="4">Pontos de Energia em Quantidades Adequadas</option>
+                            <option value="muitas"          data-nota="5">Muitos Pontos de Energia</option>
                         </select>
-
+        
                         <label for="internet">Qualidade Internet / Wi-fi</label>
-                        <select id="internet">
-                            <option value="sem-internet">Sem Internet / Wi-fi</option>
-                            <option value="ruim-internet">Ruim</option>
-                            <option value="regular-internet">Regular</option>
-                            <option value="boa-internet">Boa</option>
-                            <option value="otima-internet">Ótima</option>
+                        <select id="internet" required>
+                            <option value="" selected disabled hidden> Selecione uma opção</option>
+                            <option value="sem-internet"        data-nota="0">Sem Internet / Wi-fi</option>
+                            <option value="ruim-internet"       data-nota="1">Ruim</option>
+                            <option value="regular-internet"    data-nota="3">Regular</option>
+                            <option value="boa-internet"        data-nota="4">Boa</option>
+                            <option value="otima-internet"      data-nota="5">Ótima</option>
                         </select>
-
+        
                         <label for="banheiro">Banheiros</label>
-                        <select id="banheiro">
-                            <option value="sem-banheiro">Sem Banheiro</option>
-                            <option value="quimico-banheiro">Somente Banheiro Químico</option>
-                            <option value="pouco-sujo-banheiro">Poucos Banheiros e Sujos</option>
-                            <option value="pouco-limpo-banheiro">Poucos Banheiros e Limpos</option>
-                            <option value="boa-sujo-banheiro">Boa quantidade de Banheiros e Sujos</option>
-                            <option value="boa-limpo-banheiro">Boa quantidade de Banheiros e Limpos</option>
+                        <select id="banheiro" required>
+                            <option value="" selected disabled hidden> Selecione uma opção</option>
+                            <option value="sem-banheiro"            data-nota="0">Sem Banheiro</option>
+                            <option value="quimico-banheiro"        data-nota="1">Somente Banheiro Químico</option>
+                            <option value="pouco-sujo-banheiro"     data-nota="2">Poucos Banheiros e Sujos</option>
+                            <option value="pouco-limpo-banheiro"    data-nota="3">Poucos Banheiros e Limpos</option>
+                            <option value="boa-sujo-banheiro"       data-nota="4">Boa quantidade de Banheiros e Sujos</option>
+                            <option value="boa-limpo-banheiro"      data-nota="5">Boa quantidade de Banheiros e Limpos</option>
                         </select>
-
+        
                         <label for="acessibilidade">Acessibilidade</label>
-                        <select id="acessibilidade">
-                            <option value="nao-acessibilidade">Não</option>
-                            <option value="sim-acessibilidade">Sim</option>
+                        <select id="acessibilidade" required>
+                            <option value="" selected disabled hidden> Selecione uma opção</option>
+                            <option value="nao-acessibilidade"      data-nota="0">Sem acessibilidade</option>
+                            <option value="baixa-acessibilidade"    data-nota="3">Com baixa acessibilidade</option>
+                            <option value="sim-acessibilidade"      data-nota="5">Com acessibilidade</option>
                         </select>
-
+        
                         <label for="refeicao">Refeição</label>
-                        <select id="refeicao">
-                            <option value="sem-refeicao">Sem lugares para refeição</option>
-                            <option value="com-ruim-preco-justo">Com lugares para refeição, com preço justo e comida ruim</option>
-                            <option value="com-ruim-preco-caro">Com lugares para refeição, com preço elevado e comida ruim</option>
-                            <option value="com-boa-preco-justo">Com lugares para refeição, com preço justo e comida boa</option>
-                            <option value="com-boa-preco-caro">Com lugares para refeição, com preço elevado e comida boa</option>
+                        <select id="refeicao" required>
+                            <option value="" selected disabled hidden> Selecione uma opção</option>
+                            <option value="sem-refeicao"            data-nota="0">Sem lugares para refeição</option>
+                            <option value="com-ruim-preco-justo"    data-nota="2">Com lugares para refeição, com preço justo e comida ruim</option>
+                            <option value="com-ruim-preco-caro"     data-nota="1">Com lugares para refeição, com preço elevado e comida ruim</option>
+                            <option value="com-boa-preco-justo"     data-nota="5">Com lugares para refeição, com preço justo e comida boa</option>
+                            <option value="com-boa-preco-caro"      data-nota="4">Com lugares para refeição, com preço elevado e comida boa</option>
                         </select>
 
+     
                         <label for="descricao">Descrição</label>
                         <textarea id="descricao" placeholder="Descreva como é o ambiente..."></textarea>
+                    </div>
+        
+                    <div id="avaliacao-final">
+                        <h3>Avaliação do Local</h3>
+                        <p>
+                            <span id="estrela-nota">⭐</span>
+                            <strong id="nota-final">0.0</strong> <strong> / 5.0</strong> 
+                        </p>
                     </div>
 
                     <div id="acoes-formulario">

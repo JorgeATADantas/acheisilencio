@@ -16,3 +16,4 @@ document.addEventListener('DOMContentLoaded', function() {
         if (menuVisitante) menuVisitante.style.display = 'flex';
     }
 });
+

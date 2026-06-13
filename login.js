@@ -8,6 +8,6 @@ if (formLogin) {
         localStorage.setItem('statusLogin', 'true');
         
         // Redireciona para a index
-        window.location.href = 'index.html';
+        window.location.href = 'meu-perfil.html';
     });
 }
