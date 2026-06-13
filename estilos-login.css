@@ -134,3 +134,61 @@ body, html, main {
 #botao-voltar:hover {
     color: #2D6F85;
 }
+
+/* CSS para o rodapé */
+
+#rodape-pagina {
+    background-color: #F5F7FB; 
+    color: #ebebeb; 
+    padding: 40px 20px; 
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px; 
+    margin-bottom: 0px;
+    border-top: 3px solid #1F4D5C;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-around; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    gap: 30px;
+}
+
+.rodape-secao h3 {
+    color: #1F4D5C;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1F4D5C; 
+    padding-bottom: 5px;
+    display: inline-block; 
+}
+
+.rodape-secao p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #1F4D5C; 
+}
+
+.redes-sociais {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociais li {
+    margin-bottom: 8px; 
+}
+
+.redes-sociais a {
+    color: #1F4D5C;
+    text-decoration: none; 
+    font-size: 14px;
+    transition: color 0.3s; 
+}
+
+
+.redes-sociais a:hover {
+    color: #2D6F85; 
+    text-decoration: underline; 
+}
