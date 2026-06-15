@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: #F5F7FB;
+  color: #112130;
+}
+
+a {
+  color: #1F4D5C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2D6F85;
+}
+
+/* ===== TOPO / HEADER ===== */
+
+.topo {
+  background: #F5F7FB;
+  color: #1F4D5C;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #1F4D5C;
+}
+
+.topo h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  color: #1F4D5C;
+}
+
+.topo a,
+.topo span {
+  color: #1F4D5C;
+  margin-left: 12px;
+  font-weight: 500;
+}
+
+.topo a:hover {
+  color: #2D6F85;
+}
+
+.topo button {
+  background: #1F4D5C;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  font-weight: 500;
+  margin-left: 12px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.topo button:hover {
+  background: #2D6F85;
+}
+
+.topo button:active {
+  transform: scale(0.96);
+}
+
+.topo nav {
+  display: flex;
+  align-items: center;
+}
+
+/* ===== CONTAINERS ===== */
+
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+
+.card h1 {
+  color: #1F4D5C;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  color: #1F4D5C;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #112130;
+  font-size: 16px;
+}
+
+/* ===== FORMULÁRIOS ===== */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #112130;
+}
+
+input,
+select,
+textarea {
+  padding: 12px 15px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #374151;
+  background-color: #F9FAFB;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1F4D5C;
+  background-color: white;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  background: #1F4D5C;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background: #2D6F85;
+}
+
+button:active {
+  transform: scale(0.96);
+  background: #0a141d;
+}
+
+/* ===== GRUPO HORÁRIO ===== */
+
+.grupo-horario {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.grupo-horario input {
+  flex: 1;
+}
+
+.grupo-horario span {
+  font-size: 14px;
+  color: #6B7280;
+  font-weight: 600;
+}
+
+/* ===== CARDS DE LOCAL / AVALIAÇÃO ===== */
+
+.local-card,
+.avaliacao-card {
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 16px;
+  background: white;
+  position: relative;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.local-card:hover,
+.avaliacao-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.local-card h3 {
+  margin-top: 0;
+  color: #1F4D5C;
+}
+
+/* ===== MENSAGENS ===== */
+
+.erro {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.sucesso {
+  color: #15803d;
+  font-weight: bold;
+}
+
+/* ===== HR ===== */
+
+hr {
+  margin: 24px 0;
+  border: none;
+  border-top: 2px solid #F3F4F6;
+}
+
+/* ===== NOTA PREVIEW ===== */
+
+.nota-preview {
+  margin-top: 20px;
+  padding: 15px;
+  background: #F5F7FB;
+  border: 2px solid #1F4D5C;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.nota-preview p {
+  margin: 0 0 6px 0;
+  font-weight: bold;
+  color: #112130;
+}
+
+.nota-preview strong {
+  font-size: 28px;
+  color: #1F4D5C;
+}
+
+/* ===== BUSCA NO MAPA ===== */
+
+.grupo-busca {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.grupo-busca input {
+  flex: 1;
+}
+
+.grupo-busca button {
+  margin-top: 0;
+  width: auto;
+  padding: 12px 20px;
+}
+
+#mapa {
+  width: 100%;
+  height: 320px;
+  margin-top: 16px;
+  border-radius: 12px;
+  border: 1px solid #D1D5DB;
+}
+
+#resultados-busca {
+  margin-top: 12px;
+}
+
+.resultado-local {
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  background: #F9FAFB;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resultado-local:hover {
+  background: #E0F2FE;
+}
+
+.resultado-local strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #1F4D5C;
+}
+
+.mapa-container {
+  position: relative;
+}
+
+#btn-minha-localizacao {
+  position: absolute;
+  top: 28px;
+  right: 12px;
+  z-index: 1000;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: #1F4D5C;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+}
+
+#btn-minha-localizacao:hover {
+  background: #E0F2FE;
+}
+
+/* ===== BOTÕES FORMULÁRIO ===== */
+
+.botoes-formulario {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.botao-secundario {
+  background: #6B7280;
+  border-radius: 20px;
+}
+
+.botao-secundario:hover {
+  background: #475569;
+}
+
+.botao-perigo {
+  background: #dc2626;
+}
+
+.botao-perigo:hover {
+  background: #b91c1c;
+}
+
+/* ===== ESTATÍSTICAS (PERFIL) ===== */
+
+.estatisticas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.estatistica-card {
+  padding: 20px;
+  border: 1px solid #E5E7EB;
+  border-radius: 20px;
+  background: white;
+  text-align: center;
+}
+
+.estatistica-card strong {
+  display: block;
+  font-size: 40px;
+  font-weight: 600;
+  color: #1F4D5C;
+  margin-bottom: 8px;
+}
+
+.estatistica-card span {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+/* ===== FAVORITOS ===== */
+
+.botao-favorito-card {
+  position: absolute;
+  top: 12px;
+  background: transparent;
+  border: none;
+  color: #9CA3AF;
+  font-size: 28px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  z-index: 5;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.botao-favorito-card.favorito-direita {
+  right: 12px;
+}
+
+.botao-favorito-card.favorito-esquerda {
+  left: 12px;
+}
+
+.botao-favorito-card:hover {
+  background: transparent;
+  color: #EF4444;
+  transform: scale(1.2);
+}
+
+.botao-favorito-card.favoritado {
+  color: #dc2626;
+}
+
+.botao-favorito-card.favoritado:hover {
+  color: #b91c1c;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .topo {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .estatisticas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== RODAPÉ ===== */
+
+#rodape-pagina {
+  background-color: #F5F7FB;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 32px;
+  border-top: 3px solid #1F4D5C;
+}
+
+.rodape-conteudo {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.rodape-secao h3 {
+  color: #1F4D5C;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #1F4D5C;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.rodape-secao p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #1F4D5C;
+}
+
+.redes-sociais {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.redes-sociais li {
+  margin-bottom: 8px;
+}
+
+.redes-sociais a {
+  color: #1F4D5C;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: #2D6F85;
+  text-decoration: underline;
+}
+
+/* ===== MENU LINKS COMO BOTÕES ===== */
+
+.topo nav a,
+#menu-usuario a {
+  display: inline-block;
+  background-color: #1F4D5C;
+  color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.1s;
+  margin-left: 10px;
+}
+
+.topo nav a:hover,
+#menu-usuario a:hover {
+  background-color: #2D6F85;
+  text-decoration: none;
+  color: white;
+}
+
+.topo nav a:active,
+#menu-usuario a:active {
+  transform: scale(0.96) translateY(1px);
+}
+
+#menu-usuario span {
+  color: #1F4D5C;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* ===== SLOGAN ===== */
+
+.slogan {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B7280;
+}
+
+/* ===== BOTÃO SAIR NO HEADER ===== */
+
+.topo button,
+.topo nav button {
+  display: inline-block;
+  background-color: #1F4D5C;
+  color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  margin-top: 0;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.topo button:hover,
+.topo nav button:hover {
+  background-color: #2D6F85;
+}
+
+.topo button:active,
+.topo nav button:active {
+  transform: scale(0.96) translateY(1px);
+}
+
+/* ===== ESPAÇO ENTRE CARDS NO PERFIL ===== */
+
+.container .card + .card {
+  margin-top: 24px;
+}
+
+/* ===== AÇÕES DA AVALIAÇÃO (Ver local + Excluir) ===== */
+
+.acoes-avaliacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.link-ver-local {
+  color: #1F4D5C;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.link-ver-local:hover {
+  text-decoration: underline;
+  color: #2D6F85;
+}
+
+.link-excluir {
+  color: #dc2626;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.link-excluir:hover {
+  text-decoration: underline;
+  color: #b91c1c;
+}
+
+/* ===== LOGO CENTRALIZADA ===== */
+
+.logo-centralizada {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logo-centralizada img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
