@@ -4,4 +4,4 @@
 
 // Endereço base da API backend.
 // Enquanto estiver desenvolvendo localmente, usamos localhost:3000.
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://acheisilencio-api.onrender.com';
