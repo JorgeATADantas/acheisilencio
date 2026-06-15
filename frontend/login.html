@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Perfil - AcheiSilêncio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div>
+      <h1>Achei Silêncio</h1>
+      <p class="slogan">Encontre um cantinho de paz para você</p>
+    </div>
+
+    <nav id="menu-usuario">
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Meu perfil</h2>
+
+      <form id="form-perfil">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required>
+
+        <hr>
+
+        <h3>Alterar senha</h3>
+
+        <label for="senha-atual">Senha atual</label>
+        <input type="password" id="senha-atual">
+
+        <label for="nova-senha">Nova senha</label>
+        <input type="password" id="nova-senha">
+
+        <button type="submit">Salvar alterações</button>
+      </form>
+
+      <p id="mensagem-perfil"></p>
+    </section>
+
+    <section class="card">
+      <h2>Minhas estatísticas</h2>
+
+      <div class="estatisticas-grid">
+        <div class="estatistica-card">
+          <strong id="total-avaliacoes">0</strong>
+          <span>Avaliações feitas</span>
+        </div>
+
+        <div class="estatistica-card">
+          <strong id="total-favoritos">0</strong>
+          <span>Locais favoritos</span>
+        </div>
+
+        <div class="estatistica-card">
+          <strong id="media-avaliacoes">--</strong>
+          <span>Média das minhas avaliações</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Minhas avaliações</h2>
+
+      <div id="minhas-avaliacoes">
+        Carregando avaliações...
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="rodape-pagina">
+    <div class="rodape-conteudo">
+      <div class="rodape-secao">
+        <h3>Achei Silêncio</h3>
+        <p>Um site para quem busca lugares com paz e tranquilidade.</p>
+        <br>
+        <p><strong>Desenvolvido por:</strong></p>
+        <p>Jorge, André e Giovanni.</p>
+      </div>
+      <div class="rodape-secao">
+        <h3>Contato</h3>
+        <p><strong>E-mail:</strong> contato@acheisilencio.com.br</p>
+        <p><strong>Telefone:</strong> (31) 99999-0000</p>
+        <p><strong>Endereço:</strong> Avenida do Silêncio, 123 - Belo Horizonte, MG</p>
+      </div>
+      <div class="rodape-secao">
+        <h3>Redes Sociais</h3>
+        <ul class="redes-sociais">
+          <li><a href="#">Instagram: @acheisilencio</a></li>
+          <li><a href="#">Twitter/X: @acheisilencio_</a></li>
+          <li><a href="#">LinkedIn: Achei Silêncio</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/perfil.js"></script>
+</body>
+</html>

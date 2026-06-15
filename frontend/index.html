@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Achei Silêncio</title>
+
+  <!-- CSS do Leaflet, biblioteca do mapa -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  <!-- CSS da aplicação -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topo">
+      <div>
+        <h1>Achei Silêncio</h1>
+        <p class="slogan">Encontre um cantinho de paz para você</p>
+      </div>
+
+      <nav id="menu-usuario">
+        <!-- O JavaScript preenche esse menu -->
+      </nav>
+    </header>
+
+  <main class="container">
+
+    <div id="imagem-logo" class="logo-centralizada">
+      <img src="imagens/logo-achei-silencio.png" alt="Logo Achei Silêncio">
+    </div>
+
+    <section class="card">
+      <h2>Mapa dos locais cadastrados</h2>
+
+      <div class="mapa-container">
+        <div id="mapa"></div>
+
+        <button type="button" id="btn-minha-localizacao" title="Usar minha localização">
+          🎯
+        </button>
+      </div>
+    </section>
+
+    <section class="card" id="area-avaliacao">
+      <h2>Cadastrar local</h2>
+
+      <form id="form-avaliacao">
+
+        <h3>Buscar local no mapa</h3>
+
+        <label for="busca-local">Pesquisar local</label>
+        <div class="grupo-busca">
+          <input
+            type="text"
+            id="busca-local"
+            placeholder="Ex: CCBB Belo Horizonte"
+          >
+          <button type="button" id="btn-buscar-local">
+            Buscar
+          </button>
+        </div>
+
+        <div id="resultados-busca"></div>
+
+        <!-- Campos ocultos preenchidos pelo mapa/OpenStreetMap -->
+        <input type="hidden" id="osm-id">
+        <input type="hidden" id="latitude">
+        <input type="hidden" id="longitude">
+
+        <hr>
+
+        <label for="nome-local">Nome do local</label>
+        <input type="text" id="nome-local" placeholder="Ex: CCBB" required>
+
+        <label for="categoria">Categoria</label>
+        <select id="categoria" required>
+          <option value="" selected disabled hidden>Selecione uma categoria</option>
+        </select>
+
+        <label for="endereco">Endereço</label>
+        <input
+          type="text"
+          id="endereco"
+          placeholder="Ex: Praça da Liberdade, 144 - Funcionários"
+          required
+        >
+
+        <label>Horário de funcionamento</label>
+        <div class="grupo-horario">
+          <input type="time" id="horario-abertura" required>
+          <span>até</span>
+          <input type="time" id="horario-fechamento" required>
+        </div>
+
+        <label for="faixa-preco">Faixa de Preço</label>
+        <select id="faixa-preco" required></select>
+
+        <label for="pontos-energia">Quantidade de Pontos de Energia</label>
+        <select id="pontos-energia" required></select>
+
+        <label for="internet">Qualidade Internet / Wi-fi</label>
+        <select id="internet" required></select>
+
+        <label for="banheiro">Banheiros</label>
+        <select id="banheiro" required></select>
+
+        <label for="acessibilidade">Acessibilidade</label>
+        <select id="acessibilidade" required></select>
+
+        <label for="refeicao">Refeição</label>
+        <select id="refeicao" required></select>
+
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" placeholder="Descreva suas impressões do local..."></textarea>
+
+        <div class="nota-preview">
+          <p>Nota da avaliação:</p>
+          <strong id="nota-preview">--</strong>
+        </div>
+
+        <button type="submit">Salvar avaliação</button>
+      </form>
+
+      <p id="mensagem-avaliacao"></p>
+    </section>
+  </main>
+
+  <footer id="rodape-pagina">
+    <div class="rodape-conteudo">
+      <div class="rodape-secao">
+        <h3>Achei Silêncio</h3>
+        <p>Um site para quem busca lugares com paz e tranquilidade.</p>
+        <br>
+        <p><strong>Desenvolvido por:</strong></p>
+        <p>Jorge, André e Giovanni.</p>
+      </div>
+      <div class="rodape-secao">
+        <h3>Contato</h3>
+        <p><strong>E-mail:</strong> contato@acheisilencio.com.br</p>
+        <p><strong>Telefone:</strong> (31) 99999-0000</p>
+        <p><strong>Endereço:</strong> Avenida do Silêncio, 123 - Belo Horizonte, MG</p>
+      </div>
+      <div class="rodape-secao">
+        <h3>Redes Sociais</h3>
+        <ul class="redes-sociais">
+          <li><a href="#">Instagram: @acheisilencio</a></li>
+          <li><a href="#">Twitter/X: @acheisilencio_</a></li>
+          <li><a href="#">LinkedIn: Achei Silêncio</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS do Leaflet -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <script src="js/config.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
