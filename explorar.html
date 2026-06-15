@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
         <header id="cabecalho-pagina">
             <h1 id="nome-site"><a href="index.html">Achei Silêncio</a></h1>
             <h2 id="slogan-site"><strong>Encontre um cantinho de paz para você</strong></h2>
-        
+
             <nav id="menu-principal">
                 <ul id="menu-usuario">
                     <li><a href="explorar.html">Explorar</a></li>
@@ -32,39 +33,248 @@
 
         <main id="principal" class="explorar-cheia">
             <div class="conteudo-centralizado">
-                
+
                 <section id="barra-pesquisa">
                     <div class="area-input-tags">
                         <div id="tags-selecionadas"></div>
                         <input type="text" id="campo-busca" placeholder="Buscar por bairro, rua, universidade...">
                     </div>
-                    
+
                     <div class="container-filtro">
                         <button id="btn-filtrar">Filtrar ▼</button>
-                        
+
+
                         <div id="menu-filtros" class="oculto">
                             <strong class="titulo-categoria">Avaliação</strong>
-                            <label><input type="checkbox" class="check-filtro" value="5 Estrelas" data-cor="tag-amarela"> 5 Estrelas</label>
-                            <label><input type="checkbox" class="check-filtro" value="4 Estrelas" data-cor="tag-amarela"> 4 Estrelas</label>
-                            <label><input type="checkbox" class="check-filtro" value="3 Estrelas" data-cor="tag-amarela"> 3 Estrelas</label>
-                            <label><input type="checkbox" class="check-filtro" value="2 Estrelas" data-cor="tag-amarela"> 2 Estrelas</label>
-                            <label><input type="checkbox" class="check-filtro" value="1 Estrela" data-cor="tag-amarela"> 1 Estrela</label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="nota" value="5"
+                                    data-cor="tag-amarela">
+                                5 Estrelas
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="nota" value="4"
+                                    data-cor="tag-amarela">
+                                4 Estrelas
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="nota" value="3"
+                                    data-cor="tag-amarela">
+                                3 Estrelas
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="nota" value="2"
+                                    data-cor="tag-amarela">
+                                2 Estrelas
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="nota" value="1"
+                                    data-cor="tag-amarela">
+                                1 Estrela
+                            </label>
 
-                            <strong class="titulo-categoria">Comodidades</strong>
-                            <label><input type="checkbox" class="check-filtro" value="Wi-Fi" data-cor="tag-azul"> Wi-Fi</label>
-                            <label><input type="checkbox" class="check-filtro" value="Ar Condicionado" data-cor="tag-azul"> Ar Condicionado</label>
-                            <label><input type="checkbox" class="check-filtro" value="Isolamento Acústico" data-cor="tag-roxa"> Isolamento Acústico</label>
-                            <label><input type="checkbox" class="check-filtro" value="Refeições no Local" data-cor="tag-verde"> Refeições no Local</label>
-                            <label><input type="checkbox" class="check-filtro" value="Pet Friendly" data-cor="tag-roxa"> Pet Friendly</label>
+                            <strong class="titulo-categoria">Categoria</strong>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="categoria" value="biblioteca"
+                                    data-cor="tag-azul">
+                                Biblioteca
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="categoria" value="cafe"
+                                    data-cor="tag-azul">
+                                Café
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="categoria"
+                                    value="centro-cultural" data-cor="tag-azul">
+                                Centro Cultural
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="categoria" value="museu"
+                                    data-cor="tag-azul">
+                                Museu
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="categoria" value="parque"
+                                    data-cor="tag-verde">
+                                Parque
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="categoria" value="praca"
+                                    data-cor="tag-verde">
+                                Praça
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="categoria" value="restaurante"
+                                    data-cor="tag-laranja">
+                                Restaurante
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="categoria" value="sorveteria"
+                                    data-cor="tag-laranja">
+                                Sorveteria
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="categoria" value="outro"
+                                    data-cor="tag-roxa">
+                                Outro
+                            </label>
 
-                            <strong class="titulo-categoria">Ambiente</strong>
-                            <label><input type="checkbox" class="check-filtro" value="Ambiente Fechado" data-cor="tag-rosa"> Ambiente Fechado</label>
-                            <label><input type="checkbox" class="check-filtro" value="Ambiente Aberto" data-cor="tag-rosa"> Ambiente Aberto</label>
+                            <strong class="titulo-categoria">Faixa de Preço</strong>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="faixaPreco" value="gratuito"
+                                    data-cor="tag-verde">
+                                Gratuito
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="faixaPreco" value="0-5"
+                                    data-cor="tag-verde">
+                                R$ 0,01 a R$ 5,00
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="faixaPreco" value="5-10"
+                                    data-cor="tag-verde">
+                                R$ 5,01 a R$ 10,00
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="faixaPreco" value="10-20"
+                                    data-cor="tag-laranja">
+                                R$ 10,01 a R$ 20,00
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="faixaPreco" value="20-30"
+                                    data-cor="tag-laranja">
+                                R$ 20,01 a R$ 30,00
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="faixaPreco" value="30+"
+                                    data-cor="tag-laranja">
+                                Acima de R$ 30,01
+                            </label>
 
-                            <strong class="titulo-categoria">Valores e Serviços</strong>
-                            <label><input type="checkbox" class="check-filtro" value="Até R$ 35" data-cor="tag-verde"> Até R$ 35</label>
-                            <label><input type="checkbox" class="check-filtro" value="Superior a R$ 35" data-cor="tag-laranja"> Superior a R$ 35</label>
-                            <label><input type="checkbox" class="check-filtro" value="Entrega Gratuita" data-cor="tag-verde"> Entrega Gratuita</label>
+                            <strong class="titulo-categoria">Pontos de Energia</strong>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="pontosEnergia" value="sem"
+                                    data-cor="tag-roxa">
+                                Sem Pontos de Energia
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="pontosEnergia"
+                                    value="insuficientes" data-cor="tag-roxa">
+                                Pontos Insuficientes
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="pontosEnergia" value="adequadas"
+                                    data-cor="tag-roxa">
+                                Quantidade Adequada
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="pontosEnergia" value="muitas"
+                                    data-cor="tag-roxa">
+                                Muitos Pontos
+                            </label>
+
+                            <strong class="titulo-categoria">Internet / Wi-Fi</strong>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="internet" value="sem-internet"
+                                    data-cor="tag-azul">
+                                Sem Internet / Wi-Fi
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="internet" value="ruim-internet"
+                                    data-cor="tag-azul">
+                                Ruim
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="internet"
+                                    value="regular-internet" data-cor="tag-azul">
+                                Regular
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="internet" value="boa-internet"
+                                    data-cor="tag-azul">
+                                Boa
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="internet" value="otima-internet"
+                                    data-cor="tag-azul">
+                                Ótima
+                            </label>
+
+                            <strong class="titulo-categoria">Banheiros</strong>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="banheiro" value="sem-banheiro"
+                                    data-cor="tag-rosa">
+                                Sem Banheiro
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="banheiro"
+                                    value="quimico-banheiro" data-cor="tag-rosa">
+                                Banheiro Químico
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="banheiro"
+                                    value="pouco-sujo-banheiro" data-cor="tag-rosa">
+                                Poucos e Sujos
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="banheiro"
+                                    value="pouco-limpo-banheiro" data-cor="tag-rosa">
+                                Poucos e Limpos
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="banheiro"
+                                    value="boa-sujo-banheiro" data-cor="tag-rosa">
+                                Boa quantidade e Sujos
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="banheiro"
+                                    value="boa-limpo-banheiro" data-cor="tag-rosa">
+                                Boa quantidade e Limpos
+                            </label>
+
+                            <strong class="titulo-categoria">Acessibilidade</strong>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="acessibilidade"
+                                    value="nao-acessibilidade" data-cor="tag-verde">
+                                Sem Acessibilidade
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="acessibilidade"
+                                    value="baixa-acessibilidade" data-cor="tag-verde">
+                                Baixa Acessibilidade
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="acessibilidade"
+                                    value="sim-acessibilidade" data-cor="tag-verde">
+                                Com Acessibilidade
+                            </label>
+
+                            <strong class="titulo-categoria">Refeição</strong>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="refeicao" value="sem-refeicao"
+                                    data-cor="tag-laranja">
+                                Sem lugares para refeição
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="refeicao"
+                                    value="com-ruim-preco-justo" data-cor="tag-laranja">
+                                Comida ruim e preço justo
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="refeicao"
+                                    value="com-ruim-preco-caro" data-cor="tag-laranja">
+                                Comida ruim e preço caro
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="refeicao"
+                                    value="com-boa-preco-justo" data-cor="tag-laranja">
+                                Comida boa e preço justo
+                            </label>
+                            <label>
+                                <input type="checkbox" class="check-filtro" data-campo="refeicao"
+                                    value="com-boa-preco-caro" data-cor="tag-laranja">
+                                Comida boa e preço caro
+                            </label>
 
                             <hr class="linha-divisoria">
                             <button type="button" id="btn-limpar-filtros">Limpar Filtros</button>
@@ -74,7 +284,7 @@
 
                 <h2 id="titulo-explorar">Ambientes silenciosos esperando por você</h2>
 
-                <section id="mostruario">
+                <!-- <section id="mostruario">
                     <a href="#" class="cartao-local">
                         <div class="info-texto">
                             <h3>Biblioteca UFMG</h3>
@@ -116,7 +326,8 @@
                             </div>
                         </div>
                     </a>
-                </section>
+                </section> -->
+                <section id="mostruario"></section>
             </div>
         </main>
 
@@ -146,8 +357,9 @@
             </div>
         </footer>
     </div>
-    
+
     <script src="index.js"></script>
     <script src="explorar.js"></script>
 </body>
+
 </html>
