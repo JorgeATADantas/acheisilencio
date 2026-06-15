@@ -1,7 +1,7 @@
 //Arquivo para iniciar o servidor (src/server.js)
 
 // Carrega as variáveis de ambiente do arquivo .env (Exemplo: PORT, DATABASE_URL, JWT_SECRET)
-require('dotenv').config();
+require('dotenv').config({ path: __dirname + '/../.env' });
 
 // Importa o app configurado no arquivo app.js (Rotas, middlewares e configurações do Express,...)
 const app = require('./app');
