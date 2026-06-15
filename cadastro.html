@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achei Silêncio - Cadastro</title>
-    
-    <link rel="stylesheet" href="estilos-cadastro.css">
+  <meta charset="UTF-8">
+  <title>Cadastro - AcheiSilêncio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main id="principal">
-        <a href="login.html" id="botao-voltar">← Voltar para o login</a>
-        
-        <section id="imagem-logo">
-            <img src="imagens\logo-achei-silêncio.png" id="imagem" alt="Logo do nosso site">
-        </section>
 
-        <section id="cadastro">
-            <p id="texto-cadastrar">Criar Conta</p>
-            
-            <form id="form-cadastro">
-                <label class="rotulo" for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                
-                <label class="rotulo" for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-                
-                <label class="rotulo" for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-                
-                <label class="rotulo" for="confirma-senha">Confirmar Senha:</label>
-                <input type="password" id="confirma-senha" name="confirma-senha" required>
-                
-                <button type="submit" id="btn-cadastrar">Cadastrar</button>
-            </form>
-        
-            <section id="voltar-login">
-                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
-            </section>
-        </section>
-    </main>
+  <main class="container">
+    <section class="card">
+      <h1>Achei Silêncio</h1>
+      <h2>Criar conta</h2>
 
-    <script src="cadastro.js"></script>
+      <form id="form-cadastro">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <p id="mensagem"></p>
+
+      <p>
+        Já tem conta?
+        <a href="login.html">Entrar</a>
+      </p>
+
+      <p>
+        <a href="index.html">Voltar para início</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/cadastro.js"></script>
 </body>
 </html>
